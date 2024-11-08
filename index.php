@@ -1,4 +1,10 @@
 <?php
+require_once __DIR__ .'/config.php';
+print SITE;
+print "<br>";
+print APP_ROOT;
+
+
 // $strings_variable = 'Mehmet Reşit Akın';
 // $args1 = 20;
 // $args2 = 20;
@@ -77,3 +83,36 @@
 // null kontrol şekli 
 // print $sayi1 ?? 'Değersiz';
 // print $sayi1 ?: 'Değersiz';
+
+
+// array map foksiyonu dizinin içini boşaltma
+// $array4 = [
+//     "Bilgisayar",
+//     "Telefon",
+//     "Tablet",
+//     "Playstation",
+//     "Sırt Çantası",
+//     "Bilgisayar"
+// ];
+
+// $new_array = array_map(function ($item){
+// return "ürünler :" . $item;
+// },$array4);
+
+// var_dump($new_array);
+
+// $string = "Bilgisayar,Telefon,Kitap,Defter,Kalem";
+// $array = explode(",",$string);
+// print_r($array);
+
+// $array4 = [
+//         "Bilgisayar",
+//         "Telefon",
+//         "Tablet",
+//         "Playstation",
+//         "Sırt Çantası",
+//         "Bilgisayar"
+//     ];
+
+//     $string = implode("<=>",$array4);
+//     print_r($string);
