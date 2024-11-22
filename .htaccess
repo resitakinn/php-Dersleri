@@ -1,0 +1,7 @@
+<!-- videoyua göre gittiğimde bir türlü sorun giderilmedi bende cozumu bu şekilde ürettim -->
+
+RewriteEngine On
+RewriteBase /php-dersleri/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^([^?]*) index.php?route=$1 [L,QSA]
