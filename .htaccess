@@ -1,7 +1,8 @@
-<!-- videoyua göre gittiğimde bir türlü sorun giderilmedi bende cozumu bu şekilde ürettim -->
-
 RewriteEngine On
-RewriteBase /php-dersleri/
+
+# Eğer istek mevcut bir dosyaya gitmiyorsa
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteRule ^([^?]*) index.php?route=$1 [L,QSA]
+# Eğer istek mevcut bir dizine gitmiyorsa
+RewriteCond %{REQUEST_FILENAME} !-d
+# İstekleri index.php üzerinden yönlendir
+RewriteRule ^(.*)$ index.php?route=$1 [QSA,L]
