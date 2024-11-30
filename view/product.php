@@ -6,7 +6,7 @@
     <title><?php print $title ?></title>
 </head>
 <body>
-    <h1>Ürünler Sayfadasınız</h1>
+    <h1>Ürün Sayfadasınız</h1>
 
     
 
@@ -22,9 +22,9 @@
 
 
          <?php
-        
-        if ($products) {
-            foreach ($products as $product) {
+     
+        if ($product) {
+           
         
              ?> 
 
@@ -35,8 +35,8 @@
             <th><?php print $product['color_name'] ?></th>
         </tr>
             <?php   
-         } }
-    else {
+     
+    }else {
         print "<b>Veri Girşi Henuz Yoktur</b>";
     }
           ?>

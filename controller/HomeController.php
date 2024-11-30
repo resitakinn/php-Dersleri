@@ -6,7 +6,8 @@ class HomeController{
     public $array = []; //** her yerde kullanılabilir */
     
     /** Method Tanımlama */
-    public function index(){
+    public function index(): void
+    {
         $title = "Anasayfa";
          require_once APP_ROOT .'/view/start.php';
     }
